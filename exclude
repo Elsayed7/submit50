@@ -1,5 +1,27 @@
-*
-!*.c
-!*.h
-!Makefile*
-#mario.c
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{ int n=0; 
+while(n>0||n<9){
+                
+                     if(n>8||n<1)
+                                  {
+                                    n=get_int("Height:");
+                                   }
+                      else {
+                          break;
+                      }
+              }
+     for(int i=0;i<n;i++) 
+     {   for(int j=0;j<n-1-i;j++)
+           {
+           printf(" ");
+           }
+         for(int w=0;w<i+1;w++)
+          {
+          printf("#");
+          }
+      printf("\n");
+     }
+}
